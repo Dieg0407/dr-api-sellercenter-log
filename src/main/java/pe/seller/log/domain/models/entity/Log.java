@@ -21,9 +21,9 @@ public class Log {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 
     @Column(name = "seller_id")
-    private long id;
+    private Integer id;
 
-    @Column(name = "seller_id")
+    @Column(name = "Sellername")
     private String sellerName;
 
     @Column(columnDefinition = "json", name = "json_seller")

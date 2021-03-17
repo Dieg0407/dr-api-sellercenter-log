@@ -12,7 +12,7 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class LogDTO{
     @JsonProperty(access = JsonProperty.Access.READ_ONLY)
-    private long id;
+    private Integer id;
     private String sellerName;
     private JsonNode json;
 }
