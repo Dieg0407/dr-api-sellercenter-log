@@ -8,7 +8,8 @@ public abstract class LogParser {
         return new Log(
                 0,
                 log.getSellerName(),
-                log.getJson()
+                log.getJson(),
+                "Registrado"
         );
     }
     public static LogDTO fromEntity(Log entity) {

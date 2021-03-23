@@ -13,19 +13,20 @@ import javax.persistence.*;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "tb_seller", schema = "private")
+@Table(name = "tb_order_delivery", schema = "private")
 @TypeDef(typeClass = JsonBinaryType.class, defaultForType = JsonNode.class)
 public class Log {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-
-    @Column(name = "seller_id")
+    @Column(name = "delivery_order_id")
     private Integer id;
 
     @Column(name = "Sellername")
     private String sellerName;
 
-    @Column(columnDefinition = "json", name = "json_seller")
+    @Column(columnDefinition = "json", name = "json_vtex")
     private JsonNode json;
+
+    @Column(name = "status")
+    private String status;
 }
